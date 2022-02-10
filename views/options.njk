@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+{% block content %}
+<h2> Choose your appareance : <h2>
+<form method="POST" action="/handle-form">
+  <image type="text" name="light">Light mode</button>
+  <button type="input" name="dark">Dark mode</button>
+
+  <button type="submit">
+    submit
+  </button>
+</form>
+{% endblock %}
+
+<!-- TEST: (pas image pas button)
+
+  <select>
+  <option type="submit" name="light">Light mode</option>
+  <option type="submit" name="dark">Dark mode</option>
+</select>
+
+
+<input type="input" name="light">Light mode</button>
+
+
+  <button type="input" name="dark">Dark mode</button>
+-->
