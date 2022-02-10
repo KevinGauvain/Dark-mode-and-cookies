@@ -2,8 +2,10 @@
 {% block content %}
 <h2> Choose your appareance : <h2>
 <form method="POST" action="/handle-form">
-  <image type="text" name="light">Light mode</button>
-  <button type="input" name="dark">Dark mode</button>
+  <input type="checkbox" id="light" name="light-mode">
+  <label for="scale">Light-mode</label>
+  <input type="checkbox" id="dark" name="dark-mode">
+  <label for="scale">Dark-mode</label>
 
   <button type="submit">
     submit
