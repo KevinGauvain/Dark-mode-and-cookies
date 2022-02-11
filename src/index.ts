@@ -5,7 +5,7 @@ import cookie from "cookie";
 const app = express();
 
 // NOTES : HIER => problème avec style.css => route ???
-// TODAY => VERIFIER : 3 si retour OK plus problème submit et bouton + faire 4
+// TODAY => VERIFIER : 3 si retour OK plus problème submit et bouton + faire
 
 // formulaire :
 
@@ -14,11 +14,11 @@ const formParser = express.urlencoded({ extended: true });
 // cookie :
 
 app.get("/add-cookie", (request, response) => {
-  const favoriteColor = "blue";
+  const color = "";
 
   response.set(
     "Set-Cookie",
-    cookie.serialize("myCookie", favoriteColor, {
+    cookie.serialize("myCookie", color, {
       maxAge: 3600, // This is the time (in seconds) that this cookie will be stored
     }),
   );
